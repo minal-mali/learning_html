@@ -3,20 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
+</head>
+ <style>
+            .a1{
+                color:black;
+                font-weight:italic;
+                text-decoration:none;
+                padding-left:30px;
+                font-size:15px;
+                font-style:italic;
+                float:right;
+            }
+            .i1{
+                float:left;
+                padding-left:35px;
+                font-weight:bolder;
+                font-style:italic;
+                font-size:20px;
+                text-decoration:none;
+                color:black;
+            }
+            .f1{
+                color:black;
+                font-weight:oblique;
+                text-decoration:none;
+                padding-left:30px;
+                font-size:25px;
+                font-style:oblique;
+                float:left;
+            }
+            .m1{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+                font-family:'Roboto',sans-serif;
+            }
+            body
+            {
+                 background-color:#f2f2f2;
+            }
+            .heading{
+                 width:90;
+                 display:flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: column;
+                 text-align: center;
+                 margin: 20px auto;
+            }
+            .heading h1{
+                font-size: 50px;
+                color:#000;
+                margin-bottom:25px;
+                position: relative;
+            }
+            .heading p{
+                font-size:18px;
+                color:#666;
+                margin-bottom: 35px;
+            }
+            .container{
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px 20px;
+            }
+            .about{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .about-image{
+                flex:1;
+                margin-right: 40px;
+                overflow:hidden;
+            }
+            .about-image img{
+                max-width:100%;
+                height: auto;
+                display: block;
+                transition: 0.5s ease;
+            }
+            .about-image:hover img{
+                transform:scale(1.2);
+            }
+            .about-content{
+                flex:1;
+            }
+            .about-content h2{
+                font-size: 23px;
+                margin-bottom:15px;
+                color: #333;
+            }
+            .about-content p{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #666;
+            }
+            .about-content .read-more{
+                display:inline-block;
+                padding:10px 20px;
+                background-color:pink;
+                color: #fff;
+                font-size: 19px;
+                text-decoration:none;
+                border-radius: 25px;
+                margin-top: 15px;
+                transition: 0.3s ease;
+            }
+            .about-content .read-more:hover{
+                background-color:pink;
+
+            }
+            @media screen and(max-width:768px){
+                .heading{
+                    padding:0px 20px;
+                }
+                .heading h1{
+                    font-size:36px;
+                }
+                .heading p{
+                    font-size: 17px;
+                    margin-bottom:0px;
+                }
+                .container{
+                    padding:0px;
+                }
+                .about{
+                    padding:20px;
+                    flex-direction:coumn;
+                }
+                .about-image{
+                    margin-right:0px;
+                    margin-bottom: 20px;
+                }
+                .about-content p{
+                    padding:0px;
+                    font-size: 16px;
+                }
+                .about-content .read-more{
+                    font-size:16px;
+                }
+            }
+        </style>
 </head>
 <body>
-     <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="product.html">Products</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <h1>This is the About Page</h1>
-        <center><img src="images/b1.webp" alt="butterfly" height ="400" width="400"></center>
-    
+      <header style="height:50px;width:100%;background-color:pink;">
+            <h1 ><nav style="padding-top:20px;">
+                <a href="#" class="f1">About Us</a>
+                <a href="contact.html" class="a1">CONTACT</a>
+                <a href="product.html" class="a1">PRODUCT</a>
+                <a href="services.html" class="a1">SERVICES</a>
+                <a href="about.html" class="a1">ABOUT</a>
+                <a href="index.html" class="a1">HOME</a>
+            </nav></h1>
+        </header> 
+        <br>
+       
+        <div class="heading">
+            <p>Ice cream is a frozen dessert typically made from dairy (milk or cream), sugar, and flavorings.</p>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="images/i6.jpg">
+                </div>
+                <div class="about-content">
+                    <h2>Delicious icecream</h2>
+                    <p>Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers. The mixture is cooled below the freezing point of water and stirred to incorporate air spaces and prevent detectable ice crystals from forming.</p>
+                    <a href="" class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
 </body>
 </html>
